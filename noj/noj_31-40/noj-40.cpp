@@ -27,4 +27,7 @@ double pow_(double base)
 {base*=base;return base;}
 double pow_(double base, int exp )
 {return exp==1 ? base : base*pow_(base,exp-1);}
-//我们尝试了三目运算符。重要的是我们尝试了一次递归，或者说迭代。
+
+/*我们尝试了三目运算符。重要的是我们尝试了一次递归，或者说迭代。
+考虑一下，即可把程序分为一步步的操作。
+即到1时为结束。*/
