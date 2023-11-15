@@ -67,7 +67,6 @@ int main(){
 	
 	ans+=prime(i);
 	i++;
-	
 	}
 
 	cout<<ans;
