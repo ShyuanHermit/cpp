@@ -41,10 +41,10 @@
 
 using namespace std;
 
-int gcd(int a,int b){
+inline int gcd(int a,int b){
 	return b>0?gcd(b,a%b):a;
 }
-int prime(int i){
+inline int prime(int i){
 	int j=1,ans=0;
 	while(j<=i/2){if (gcd(i,j)==1){ans+=4;}
 		j++;
