@@ -12,6 +12,7 @@ using namespace std;
 //佩尔数的算法
 
 int PA(int n){
+    if(n==0) return 0;
     else if(n==1) return 1;
     else return 2*PA(n-1)+PA(n-2);
 }

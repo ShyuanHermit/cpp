@@ -10,8 +10,12 @@
 using namespace std;
 
 int main(){
+	
+	unsigned long long N,X;
 
+	cin>>N>>X;
 
+	cout<<6*X;
 
 return 0;
 }
