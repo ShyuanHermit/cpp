@@ -34,7 +34,7 @@ int main(){
 	
 
 	int N,i=1;cin>>N;
-cout<<"1";	
+/*cout<<"1";	
 double r1;cin>>r1;
 
 cout<<"2"; 
@@ -93,7 +93,7 @@ long d1,d2;double l11;cin>>d1>>d2>>l11;
  
  printf("%.6f\n" ,VolaCalc(a10,h10) );
  
- printf("%.6f\n" ,VolaCalc(d1,d2,l11) );
+ printf("%.6f\n" ,VolaCalc(d1,d2,l11) );*/
 
 return 0;
 }
