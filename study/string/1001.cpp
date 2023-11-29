@@ -15,10 +15,10 @@ using namespace std;
 
 int main(){
 	
-	char str1[7] ="lyx";
-	char str2[7] ="521";
-	char str3[13];
-	cout<<"plz do not cin more than 12";
+	char str1[10] ="梁颖欣";
+	char str2[6] ="521";
+	char str3[16] ;
+	cout<<"plz do not cin more than 15, take responsibility for your own computer";
 	char *m=str3;//针对一个数组（字符串）使用指针，会将数组转化为一个常量指针。继而可以用指针指向它。
 	cin>>m;
 	cout<<*m<<endl;
