@@ -6,32 +6,54 @@
  ************************************************************************/
 
 #include<bits/stdc++.h>
+#define _USE_MATH_DEFINES
 
 using namespace std;
 
-int f1()
-int f2()
-int f3()
-int f4()
-int f5()
 
 int main(){
 	
-	int m,N;
-	double a,b;
+	int m,N,i;
 
-	cin>>m,a,b,N;
+	double a,b,ans = 0;
+
+	cin>>m>>a>>b>>N;
 	
-	double num =0;
-
+	double jld[N];
+	
 	srand(RAND_MAX);
-
-	for(int i=0;i<N;i++){
-
-		num = rand()%(b-a+1)+a;
-
-		//a-->b,本来是0-->b-a-1,+1,0-->b-a, +a,a-->b; 
+	
+	for(i=0;i<N;i++){
+		jld[i] = a+ (b-a)*rand()/(RAND_MAX+1.0);
 		}
+
+	a = b - a;
+
+	switch(m){
+		
+		case 1: for(i=0;i<N;i++){
+					ans += pow(jld[i],4)/pow(M_E,jld[i])*a/N;
+			}
+
+		case 2: for(i=0;i<N;i++){
+					ans += (pow(jld[i],2)+1)*a/N;
+					}
+
+		case 3: for(i=0;i<N;i++){
+					ans += cos(jld[i])*a/N;
+					}
+
+		case 4: for(i=0;i<N;i++){
+					ans += sqrt(jld[i])*(jld[i]-2)*a/N;
+					}
+
+		case 5: for(i=0;i<N;i++){
+					ans += (2*sin(jld[i])-5*cos(jld[i]))*a/N;
+					}
+
+			}
+
+		cout<<ans;
 
 return 0;
 }
